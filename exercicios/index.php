@@ -6,21 +6,19 @@
         <title>Aula 02 - POO</title>
     </head>
     <body>
+        <pre>
         <?php
             require_once 'Caneta.php';
             $c1 = New Caneta;
-            $c1->cor = "Azul";
-            $c1->ponta = 0.5;  
-            $c2 = New Caneta;
-            $c2->cor = "Verde";
-            $c2->ponta = 0.7;
-           
-            print_r($c1);
-            echo "<br>";
-            print_r($c2);
-            
-            $c1->destampar();
-            $c2->tampar();
+            $c1->modelo = 'BIC cristal';
+            $c1->cor = 'Azul';
+            //$c1->ponta = 0.5;
+            //$c1->carga = 99;
+            //$c1->tampada = true;            
+            print_r($c1);            
+            $c1->tampar();
+            $c1->rabiscar();
         ?>
+        </pre>
     </body>
 </html>
