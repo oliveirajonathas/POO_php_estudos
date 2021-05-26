@@ -5,8 +5,10 @@ class Caneta {
     private $ponta;
     private $tampada;
     
-    public function __construct() {
-        $this->cor = 'Azul';
+    public function __construct($m, $c, $p) {
+        $this->modelo = $m;
+        $this->cor = $c;
+        $this->ponta = $p;
         $this->tampar();
     }
     
