@@ -4,38 +4,42 @@ class Caneta {
     private $cor;
     private $ponta;
     private $tampada;
-    
-    public function __construct($m, $c, $p) {
-        $this->modelo = $m;
-        $this->cor = $c;
-        $this->ponta = $p;
-        $this->tampar();
+    function __construct($modelo, $cor, $tampada) {
+        $this->modelo = $modelo;
+        $this->cor = $cor;
+        $this->setTampada($tampada);
     }
-    
-    public function getModelo(){
-       return $this->modelo;
+    function getModelo() {
+        return $this->modelo;
     }
-    public function setModelo($m){
-        $this->modelo = $m;
+
+    function getCor() {
+        return $this->cor;
     }
-    public function getPonta(){
+
+    function getPonta() {
         return $this->ponta;
     }
-    public function setPonta($p){
-        $this->ponta = $p;
+
+    function getTampada() {
+        return $this->tampada;
     }
-    
-    public function rabiscar(){
-        if ($this->tampada == true) {
-            echo "<p>ERRO! Não posso rabiscar!<p/>";
-        }else{
-            echo "<p>Estou rabiscando...</p>";
-        }        
+
+    function setModelo($modelo): void {
+        $this->modelo = $modelo;
     }
-    public function tampar(){
-        $this->tampada = true;
+
+    function setCor($cor): void {
+        $this->cor = $cor;
     }
-    public function destampar(){
-        $this->tampada = false;
+
+    function setPonta($ponta): void {
+        $this->ponta = $ponta;
     }
+
+    function setTampada($tampada): void {
+        $this->tampada = $tampada;
+    }
+
+
 }

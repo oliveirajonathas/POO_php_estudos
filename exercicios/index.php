@@ -9,8 +9,8 @@
         <pre>
         <?php
             require_once 'Caneta.php';
-            $caneta1 = New Caneta ('Bic', 'Vermelho', 0.5);
-            $caneta2 = New Caneta ('Pentel', 'Preta', 0.7);
+            $caneta1 = New Caneta ('Bic', 'Vermelho', true);
+            $caneta2 = New Caneta ('Pentel', 'Preta', true);
             print_r($caneta1);
             print_r($caneta2);
         ?>
